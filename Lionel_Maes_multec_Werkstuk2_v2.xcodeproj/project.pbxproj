@@ -15,6 +15,7 @@
 		8D2311CE209CA8EA00F68C19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D2311CC209CA8EA00F68C19 /* LaunchScreen.storyboard */; };
 		8D2311D9209CA8EA00F68C19 /* Lionel_Maes_multec_Werkstuk2_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2311D8209CA8EA00F68C19 /* Lionel_Maes_multec_Werkstuk2_v2Tests.swift */; };
 		8D2311E4209CA8EB00F68C19 /* Lionel_Maes_multec_Werkstuk2_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2311E3209CA8EB00F68C19 /* Lionel_Maes_multec_Werkstuk2_v2UITests.swift */; };
+		8D2311F3209CA8F900F68C19 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2311F2209CA8F900F68C19 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8D2311DF209CA8EB00F68C19 /* Lionel_Maes_multec_Werkstuk2_v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lionel_Maes_multec_Werkstuk2_v2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D2311E3209CA8EB00F68C19 /* Lionel_Maes_multec_Werkstuk2_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lionel_Maes_multec_Werkstuk2_v2UITests.swift; sourceTree = "<group>"; };
 		8D2311E5209CA8EB00F68C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D2311F2209CA8F900F68C19 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D2311F3209CA8F900F68C19 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				8D2311D7209CA8EA00F68C19 /* Lionel_Maes_multec_Werkstuk2_v2Tests */,
 				8D2311E2209CA8EB00F68C19 /* Lionel_Maes_multec_Werkstuk2_v2UITests */,
 				8D2311BE209CA8E900F68C19 /* Products */,
+				8D2311F1209CA8F900F68C19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				8D2311E5209CA8EB00F68C19 /* Info.plist */,
 			);
 			path = Lionel_Maes_multec_Werkstuk2_v2UITests;
+			sourceTree = "<group>";
+		};
+		8D2311F1209CA8F900F68C19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D2311F2209CA8F900F68C19 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +209,11 @@
 					8D2311BC209CA8E900F68C19 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					8D2311D3209CA8EA00F68C19 = {
 						CreatedOnToolsVersion = 9.2;
